@@ -48,6 +48,12 @@ class Bayes:
 		k=zip(x1,x2)
 		k:[(a,e),(b,f),(c,g)]
 		'''
+		'''
+			label=('c1','c0','c1')
+			dataset=([0,2],[2,1],[0,0])
+			>>> list(zip(dataset,label))
+			[([0, 2], 'c1'), ([2, 1], 'c0'), ([0, 0], 'c1')]
+		'''
 		for vector,label in zip(dataSet,labels):
 			if (label not in self.vectorcount):
 				self.vectorcount[label]=[]
