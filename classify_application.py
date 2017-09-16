@@ -34,6 +34,7 @@ model.fit(x_train,y_train)#训练数据
 y2=model.predict(x_test)#训练结果
 
 #2.1，使用自己写的bayes算法实现
+#把knn算法复制过来
 bys=Bayes()
 bys.fit(x_train.tolist(),y_train.tolist())
 #训练数据都转换成列表格式
